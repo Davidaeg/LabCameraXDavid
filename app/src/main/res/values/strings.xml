@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LabCameraXDavid</string>
+    <string name="Title">Test de COVID-19</string>
+    <string name="name">Nombre Completo</string>
+    <string name="fiebre">Fiebre: </string>
+    <string name="tos">Tos: </string>
+    <string name="migrana">Migraña: </string>
+    <string name="cansancio">Cansancio: </string>
+    <string name="olfato">Perdida De Olfato: </string>
+    <string name="gusto">Perdida Del Gusto: </string>
+    <string name="enviarInfo">Enviar Información </string>
+    <string name="enviarFoto">Enviar Fotografía </string>
+</resources>

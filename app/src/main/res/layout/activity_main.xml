@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_sendFoto"
+        android:layout_width="170dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/holo_red_light"
+        android:text="@string/enviarFoto"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sendInfo" />
+
+    <Switch
+        android:id="@+id/sw_gusto"
+        android:layout_width="109dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/gusto"
+        app:layout_constraintEnd_toEndOf="@+id/sw_olfato"
+        app:layout_constraintStart_toStartOf="@+id/sw_olfato"
+        app:layout_constraintTop_toBottomOf="@+id/sw_olfato" />
+
+    <Switch
+        android:id="@+id/sw_cansancio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="@string/cansancio"
+        app:layout_constraintBottom_toBottomOf="@+id/sw_fiebre"
+        app:layout_constraintStart_toEndOf="@+id/sw_fiebre"
+        app:layout_constraintTop_toTopOf="@+id/sw_fiebre" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/Title"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/sw_fiebre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/fiebre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <Switch
+        android:id="@+id/sw_tos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/tos"
+        app:layout_constraintStart_toStartOf="@+id/sw_fiebre"
+        app:layout_constraintTop_toBottomOf="@+id/sw_fiebre" />
+
+    <Switch
+        android:id="@+id/sw_migranna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/migrana"
+        app:layout_constraintStart_toStartOf="@+id/sw_tos"
+        app:layout_constraintTop_toBottomOf="@+id/sw_tos" />
+
+    <Switch
+        android:id="@+id/sw_olfato"
+        android:layout_width="109dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/olfato"
+        app:layout_constraintStart_toStartOf="@+id/sw_cansancio"
+        app:layout_constraintTop_toBottomOf="@+id/sw_cansancio" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btn_sendInfo"
+        android:layout_width="170dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/holo_red_light"
+        android:text="@string/enviarInfo"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sw_gusto" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sendFoto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
